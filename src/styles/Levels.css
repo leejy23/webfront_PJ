@@ -1,6 +1,7 @@
 /* 컨테이너 스타일 */
 .container {
-  max-width: 800px;
+  max-width: 1320px;
+  max-height: 156;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -65,14 +66,21 @@
   font-size: 1.2rem;
 }
 
+.level-text .title_description {
+  margin-top: 0rem; /* 제목과 설명 간 간격 */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b1b1b1;
+}
+
 .level-text .description {
-  margin-top: 0.5rem; /* 제목과 설명 간 간격 */
+  margin-top: 0.2rem; /* 제목과 설명 간 간격 */
   font-size: 0.9rem;
   color: #b1b1b1;
 }
 
 .learn-button {
-  margin-top: 1rem;
+  margin-top: 0.4rem;
   padding: 0.6rem 0.1rem;
   background-color: #05472b; /* 버튼 배경색 */
   color: #ff9700;
@@ -94,7 +102,7 @@
 
 /* 상단 항목 스타일 */
 .top-level {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   display: flex;
   align-items: center;

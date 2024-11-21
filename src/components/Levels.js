@@ -15,7 +15,7 @@ const Levels = () => {
       {
         id: "level-2",
         title: "기초 문법",
-        description: "문법에 자신감을 가지세요.",
+        description: "이것은 빨간색이에요 그것은 파란색이에요.",
         image: "/img/easy3.png",
         keywords: ["문장 구조", "기본 문법"],
       },
@@ -82,7 +82,7 @@ const Levels = () => {
     beginner: {
       id: "level-0",
       title: "초급",
-      description: "일상에서 자주 사용하는 짧은 표현과 문장들",
+      description: "일상 회화: 일상에서 자주 사용하는 짧은 표현과 문장들",
       image: "/img/easy1.png",
     },
     intermediate: {
@@ -115,8 +115,8 @@ const Levels = () => {
     <div className="level-card no-border top-level">
       <img src={topLevel.image} alt={topLevel.title} className="large-image" />
       <div className="level-text">
-        <h3>{topLevel.title}</h3>
-        <p className="description">{topLevel.description}</p>
+        <h2>{topLevel.title}</h2>
+        <p className="title_description">{topLevel.description}</p>
         <a href="/blank-page" className="learn-button">
           학습 시작
         </a>
@@ -155,4 +155,3 @@ const Levels = () => {
 };
 
 export default Levels;
-
