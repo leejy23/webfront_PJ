@@ -82,21 +82,21 @@ const Levels = () => {
     beginner: {
       id: "level-0",
       title: "초급",
-      description: "일상 회화: 일상에서 자주 사용하는 짧은 표현과 문장들",
+      description: "일상 회화 : 일상에서 자주 사용하는 짧은 표현과 문장들",
       image: "/img/easy1.png",
     },
     intermediate: {
       id: "level-4",
       title: "중급",
       description:
-        "상황별 대화: 쇼핑, 여행, 레스토랑 등 다양한 상황에서의 대화연습",
+        "상황별 대화 : 쇼핑, 여행, 레스토랑 등 다양한 상황에서의 대화연습",
       image: "/img/normal1.png",
     },
     advanced: {
       id: "level-8",
       title: "고급",
       description:
-        "비즈니스 영어: 비즈니스 상황에서 사용하는 영어, 발표 및 면접 연습",
+        "비즈니스 영어 : 비즈니스 상황에서 사용하는 영어, 발표 및 면접 연습",
       image: "/img/hard1.png",
     },
   };
