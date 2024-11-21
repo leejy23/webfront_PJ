@@ -116,3 +116,36 @@
 .full-span {
   grid-column: span 2; /* 두 열을 차지 */
 }
+
+/* 키워드 컨테이너 스타일 */
+.keyword-container {
+  display: flex;
+  gap: 0.5rem; /* 키워드 간 간격 */
+  margin-top: 0.5rem;
+}
+
+/* 초급 키워드 색상 */
+.beginner-keywords .keyword {
+  background-color: hsla(36, 100%, 50%, 0.36);
+}
+
+/* 중급 키워드 색상 */
+.intermediate-keywords .keyword {
+  background-color: hsla(36, 100%, 50%, 0.66);
+}
+
+/* 고급 키워드 색상 */
+.advanced-keywords .keyword {
+  background-color: hsla(36, 100%, 50%, 0.96);
+}
+
+/* 키워드 공통 스타일 */
+.keyword {
+  padding: 0.3rem 0.7rem;
+  color: #333; /* 텍스트 색상 */
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}

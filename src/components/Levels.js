@@ -10,18 +10,21 @@ const Levels = () => {
         title: "일상 회화",
         description: "오늘은 어떤 공부를 할까?",
         image: "/img/easy2.png",
+        keywords: ["일상 표현", "인사"],
       },
       {
         id: "level-2",
         title: "기초 문법",
         description: "문법에 자신감을 가지세요.",
         image: "/img/easy3.png",
+        keywords: ["문장 구조", "기본 문법"],
       },
       {
         id: "level-3",
         title: "어휘 확장",
         description: "안녕, 밥 먹었어?.",
         image: "/img/easy4.png",
+        keywords: ["인사말", "일상 어휘"],
         spanFull: true,
       },
     ],
@@ -31,18 +34,21 @@ const Levels = () => {
         title: "상황별 회화",
         description: "얼마에요? 현금으로 결제할게요.",
         image: "/img/normal2.png",
+        keywords: ["상황 연습", "결제 표현"],
       },
       {
         id: "level-6",
         title: "문법 확장",
         description: "이 영화는 영미 드라마를 보는 것과 같아",
         image: "/img/normal3.png",
+        keywords: ["문법 심화", "드라마 표현"],
       },
       {
         id: "level-7",
         title: "문화 이해",
         description: "한국 음식을 좋아해요. 한번 같이 가요.",
         image: "/img/normal4.png",
+        keywords: ["한국 문화", "음식 표현"],
         spanFull: true,
       },
     ],
@@ -52,18 +58,21 @@ const Levels = () => {
         title: "비즈니스 영어",
         description: "We need to improve our synergy for better results.",
         image: "/img/hard2.png",
+        keywords: ["비즈니스", "회의 표현"],
       },
       {
         id: "level-10",
         title: "고급 문법과 관용구",
         description: "It's time to step up our game and deliver the results.",
         image: "/img/hard3.png",
+        keywords: ["고급 문법", "관용 표현"],
       },
       {
         id: "level-11",
         title: "토론 주제",
         description: "~ 문제에 대한 다양한 의견을 공유하고자 합니다.",
         image: "/img/hard4.png",
+        keywords: ["토론", "의견 교환"],
         spanFull: true,
       },
     ],
@@ -92,6 +101,16 @@ const Levels = () => {
     },
   };
 
+  const renderKeywords = (keywords, category) => (
+    <div className={`keyword-container ${category}-keywords`}>
+      {keywords.map((keyword, index) => (
+        <span key={index} className="keyword">
+          {keyword}
+        </span>
+      ))}
+    </div>
+  );
+
   const renderTopLevel = (topLevel) => (
     <div className="level-card no-border top-level">
       <img src={topLevel.image} alt={topLevel.title} className="large-image" />
@@ -118,6 +137,7 @@ const Levels = () => {
             <div className="level-text">
               <h3>{level.title}</h3>
               <p className="description">{level.description}</p>
+              {level.keywords && renderKeywords(level.keywords, category)}
             </div>
           </div>
         ))}
@@ -135,3 +155,4 @@ const Levels = () => {
 };
 
 export default Levels;
+
