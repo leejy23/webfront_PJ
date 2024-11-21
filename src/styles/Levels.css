@@ -1,7 +1,6 @@
 /* 컨테이너 스타일 */
 .container {
   max-width: 1320px;
-  max-height: 156;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -120,7 +119,7 @@
 .grid-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /* 두 열을 차지하는 항목 */
